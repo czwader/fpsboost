@@ -4,7 +4,7 @@ Citizen.CreateThreadNow(function()
         for i = 0, 10 do
             local playerPed = GetPlayerPed(-1)
             local coords    = GetEntityCoords(playerPed)
-            GetClosestObjectOfType(coords, 3.0, GetHashKey('prop_roadcone02a'), false, false, false)
+            GetClosestObjectOfType(coords, 30.0, GetHashKey('prop_roadcone02a'), false, false, false)
             Citizen.CreateThread(function()
                 while true do
                     Wait(0)
